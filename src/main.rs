@@ -19,5 +19,7 @@ fn app() -> Html {
 }
 
 fn main() {
+    wasm_logger::init(wasm_logger::Config::default());
+    log::debug!("App is starting");
     yew::start_app::<App>();
 }
