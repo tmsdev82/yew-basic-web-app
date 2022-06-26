@@ -89,7 +89,7 @@ impl Component for CappedInputComponent {
             Msg::SetInput(val)
         });
 
-        let display_values = self.value_list.iter().map(|name| html!{<li>{name}</li>});
+        let display_values = self.value_list.iter().map(|value| html!{<li>{value}</li>});
         html! {
             <div>
                 <div>
@@ -98,11 +98,11 @@ impl Component for CappedInputComponent {
                     <button onclick={on_click}>{"Add to list"}</button>
                 </div>
                 <div>
-                <ul>
-                 {for display_values}
-              
-                </ul>
-            </div>
+                    <ul>
+                    {for display_values}
+                
+                    </ul>
+                </div>
             </div>
         }
     }
