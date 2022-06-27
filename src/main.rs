@@ -1,7 +1,9 @@
 use yew::prelude::*;
 use capped_input_component::CappedInputComponent;
+use list_component::ListComponent;
 
 mod capped_input_component;
+mod list_component;
 
 #[function_component(App)]
 fn app() -> Html {
@@ -12,6 +14,7 @@ fn app() -> Html {
             <div>
                 <CappedInputComponent min_value={0} max_value={20}/>  
                 <CappedInputComponent min_value={5} max_value={30}/>  
+                <ListComponent/>
             </div>
         </div>
         </>
