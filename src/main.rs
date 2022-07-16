@@ -2,7 +2,7 @@ use yew::prelude::*;
 use capped_input_component::CappedInputComponent;
 use list_component::ListComponent;
 
-mod capped_input_component;
+mod capped_input_component; 
 mod list_component;
 
 #[function_component(App)]
